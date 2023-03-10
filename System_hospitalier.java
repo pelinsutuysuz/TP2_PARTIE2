@@ -3,8 +3,7 @@ package tp_git;
 import java.util.ArrayList;
 import java.util.List;
 
-public class System_hospitalier {
-	
+public class System_hospitalier {	
 	private List<Requête> listRequetes;
 
 	public System_hospitalier(List<Requête> listRequetes) {
@@ -34,13 +33,18 @@ public class System_hospitalier {
 	}
 	
 	private String analyserRequete(Requête requête) {
-		// Analyser la requête
+		// Cette méthode analyse les symptomes du patient de la requete mise en parametre.
+		// et retourne "requete analysee" une fois que l'analyse est terminee.
 		return "requête analysée";
 	}
 	
 	private String comparerDonnes() {
-		// Comparaison des données
+		// Cette methode compare toutes les requetes afin de determiner si les patients 
+		// ont les memes symptomes et donc s'il y a un cluster. Si de nombreux patients 
+		// ont les memes symptomes, on retourne "cluster trouve"
 		return "Cluster trouvé";
 	}
 
 }
+
+
